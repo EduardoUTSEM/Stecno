@@ -28,7 +28,18 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
+<script type='text/javascript'>
+  document.addEventListener("contextmenu", function(event){
+      event.preventDefault();
+  }, false);
 
+  document.addEventListener("copy", function(event){
+      // Change the copied text if you want
+      event.clipboardData.setData("text/plain", "No se permite copiar en esta página web");
+      // Prevent the default copy action
+      event.preventDefault();
+  }, false);
+</script>
 <body>
   <div class="hero_area">
     <!-- header section strats -->
@@ -91,13 +102,10 @@
             <span class="sr-only">Next</span>
           </a>
           <h1>
-            D <br>
-            S<br>
-
+            Bienvenido, somos Soluciones Tecnológicas <br>
           </h1>
           <p>
-            El único lugar donde encontrará la solución a las necesidades que requiere atender.
-          </p>
+            Líderes en tecnologías para la seguridad nacional </p>
           <div>
             <a href="" class="slider-link">
               CONTACT US
@@ -195,8 +203,8 @@
         <a href="">
           <div class="box">
             <div class="img-box">
-              <img src="images/s-1.png" alt="" class="img-1">
-              <img src="images/s1-blue.png" alt="" class="img-2">
+              <img src="images/tower.png" alt="" class="img-1" width="44px" height="47">
+              <img src="images/towera.png" alt="" class="img-2" width="44px" height="47">
             </div>
             <div class="name">
               <h6>
@@ -496,6 +504,7 @@
     <p>
       Departamento de TI - Soluciones Tecnologicas
     </p>
+    <a href="https://www.flaticon.es/iconos-gratis/red-de-computadoras" title="red-de-computadoras iconos">Red-de-computadoras iconos creados por juicy_fish - Flaticon</a>
   </section>
   <!-- footer section -->
 
